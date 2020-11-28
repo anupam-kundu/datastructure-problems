@@ -38,5 +38,14 @@ ds algo problems
     11. sorted list to BST
     12. Tree traversal PreOrder, InOrder, PostOrder (Recursive and non-recursive way)
     13. Zigzag Tree Traversal
+    
+#Sort
+
+    1. BucketSort
+    2. CountingSort
+    3. InsertionSort
+    4. MergeSort
+    5. QuickSort
+    6. Remove duplicates from sorted array
  
     
