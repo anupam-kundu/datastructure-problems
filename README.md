@@ -60,5 +60,16 @@ ds algo problems
 
     1. Graph Traverse DFS, BFS
     2. Topological sort
+
+#String
+
+    1. Capture X Region
+    2. Combination of string chars
+    3. Permutation of string chars
+    4. PatternMatching KMP
+    5. Remove Adjacent chars
+    6. Remove spaces in a string
+    7. WildCard Matching
+    
  
     
