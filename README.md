@@ -8,3 +8,8 @@ ds algo problems
     3. Reverse Linked List using recursion
     4. clone linked list with random pointer
     
+#Heap
+
+    1. Build max heap using array (insertElement, deleteElement, getMaxElement)
+    
+    
