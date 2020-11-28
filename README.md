@@ -71,5 +71,18 @@ ds algo problems
     6. Remove spaces in a string
     7. WildCard Matching
     
+#Greedy problems
+    
+    1. Interval Coloring
+    2. KnapsackFractional
+    
+#Divide and conquer problems
+    
+    1. EggDrop
+    2. Find Exponential of a number
+    3. Maximum value contigious subsequence
+    4. Find buy date and sell date from a list of stck price to get max profit
+    
+    
  
     
