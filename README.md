@@ -19,3 +19,7 @@ ds algo problems
     3. Sort a stack using only stack operation
     4. Reverse a stack using only stack operation
     
+#Queue
+
+    1. Circular queue using array
+    
