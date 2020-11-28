@@ -47,5 +47,13 @@ ds algo problems
     4. MergeSort
     5. QuickSort
     6. Remove duplicates from sorted array
+    
+#Search
+
+    1. Interpolation Search
+    2. Search in a sorted array which rotated unknown number of times
+    3. Search in a matrix which is sorted by each column and row
+    4. Seperate 0 1 2 in aa array
+    5. Seperate even odd in an array
  
     
