@@ -12,4 +12,10 @@ ds algo problems
 
     1. Build max heap using array (insertElement, deleteElement, getMaxElement)
     
+#Stack
+
+    1. Find Max rectangle under a histogram
+    2. Find span i.e. current stock price is higher than how may days before
+    3. Sort a stack using only stack operation
+    4. Reverse a stack using only stack operation
     
