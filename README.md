@@ -1,9 +1,9 @@
 # datastructure-problems
 ds algo problems
 
-1. Linked List problems
-    a. Reverse a Linked List
-    b. Reverse k node of Linked List
-    c. Reverse Linked List using recursion
-    d. clone linked list with random pointer
+#Linked List problems
+    1. Reverse a Linked List    
+    2. Reverse k node of Linked List
+    3. Reverse Linked List using recursion
+    4. clone linked list with random pointer
     
