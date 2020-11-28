@@ -55,5 +55,10 @@ ds algo problems
     3. Search in a matrix which is sorted by each column and row
     4. Seperate 0 1 2 in aa array
     5. Seperate even odd in an array
+    
+#Graph
+
+    1. Graph Traverse DFS, BFS
+    2. Topological sort
  
     
