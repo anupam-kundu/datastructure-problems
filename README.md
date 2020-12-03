@@ -1,7 +1,12 @@
 # datastructure-problems
 ds algo problems
 
-#Linked List problems
+#Array
+
+    1. Find List of prime numbers in a range
+    2. Triplete sum
+
+#Linked List
 
     1. Reverse a Linked List    
     2. Reverse k node of Linked List
