@@ -5,7 +5,7 @@ public class ReverseRecursion {
 		int data;
 		LLNode link = null;
 	}
-
+	static LLNode globalhead;
 	public static void main(String[] args) {
 		LLNode head = null, temp = null;
 		for (int i = 1; i <= 40; i++) {
@@ -23,6 +23,9 @@ public class ReverseRecursion {
 		LLNode newHead = reverse(head);
 		head.link = null;
 		display(newHead);
+		LLNode tail = reverse2(newHead);
+		tail.link = null;
+		display(globalhead);
 	}
 
 	public static void display(LLNode head) {
@@ -45,6 +48,18 @@ public class ReverseRecursion {
 
 		curr.link = head;
 		return rHead;
+	}
+
+
+	public static LLNode reverse2(LLNode head) {
+		if(head.link == null) {
+			globalhead = head;
+			return head;
+		}
+
+		LLNode rHead = reverse2(head.link);
+		rHead.link = head;
+		return head;
 	}
 
 }
