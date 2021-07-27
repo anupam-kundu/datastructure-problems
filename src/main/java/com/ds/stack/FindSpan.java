@@ -13,10 +13,10 @@ public class FindSpan {
         int[] span = new int[price.length];
         int position = 0;
         for (int idx = 0; idx < price.length; idx++) {
-            while (!stk.empty() && price[idx] > price[stk.peek()]) {
+            while (!stk.empty() && price[idx] > price[stk.peek()]) { // find the previous index which is bigger than current index
                 stk.pop();
             }
-            position = stk.empty() ? -1 : stk.peek();
+            position = stk.empty() ? -1 : stk.peek(); // get the index or -1 -> minimum span is 1
             span[idx] = idx - position;
             stk.push(idx);
         }
