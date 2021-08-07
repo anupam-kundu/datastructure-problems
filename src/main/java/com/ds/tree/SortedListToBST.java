@@ -30,14 +30,13 @@ public class SortedListToBST {
             return null;
         }
         int mid = start + (end - start) / 2;
-        BinaryTreeNode<Integer> left = listToBST(head, start, mid - 1);
+        BinaryTreeNode<Integer> left = listToBST(head, start, mid - 1); // first populating left tree as we have to traverse sequentially
         BinaryTreeNode<Integer> root = new BinaryTreeNode<>(head.data);
-        root.setLeft(left);
+        root.setLeft(left); // left tree is set
         if (head.link != null) { // root is assigned to head , so moving head pointer to next element
-            head.data = head.link.data;
-            head.link = head.link.link;
+            head = head.link;
         }
-        root.setRight(listToBST(head, mid + 1, end));
+        root.setRight(listToBST(head, mid + 1, end)); // right tree is set
         return root;
     }
 }
