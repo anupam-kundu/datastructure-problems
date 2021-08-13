@@ -23,3 +23,10 @@
 hs_err_pid*
 datastructure-problems.iml
 .idea/*
+.apt_generated_tests/
+target/
+.classpath
+.factorypath
+.project
+org.eclipse*
+
