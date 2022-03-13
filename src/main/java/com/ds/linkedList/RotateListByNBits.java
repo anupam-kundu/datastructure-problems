@@ -44,7 +44,7 @@ public class RotateListByNBits {
         LLNode newHead = rotateRight(head, k);
         display(newHead);
 
-        newHead = rotateLeft(head, k);
+        newHead = rotateLeft(newHead, k);
         display(newHead);
     }
 
@@ -75,7 +75,7 @@ public class RotateListByNBits {
     private static LLNode rotateLeft(LLNode head, int k) {
 
         LLNode ptr = head;
-        for (int i = 0; i < k; i++) {
+        for (int i = 0; i < k-1; i++) {
             if (ptr.link == null) {
                 ptr = head;
             } else {
@@ -88,6 +88,7 @@ public class RotateListByNBits {
         LLNode newHead = ptr.link;
         ptr.link = null;
 
+        ptr = newHead;
         while (ptr.link != null) {
             ptr = ptr.link;
         }
