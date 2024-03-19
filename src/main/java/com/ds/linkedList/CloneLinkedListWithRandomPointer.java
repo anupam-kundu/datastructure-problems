@@ -45,4 +45,28 @@ public class CloneLinkedListWithRandomPointer {
         return mapNodes.get(head);
     }
 
+    private LLNode cloneListAlt(LLNode oldHead) { // with order of 1 space
+        if(oldHead == null) {
+            return null;
+        }
+        LLNode oldPtr = oldHead;
+        while(oldPtr != null) {
+            LLNode clone = new LLNode();
+            clone.data = oldPtr.data;
+            clone.next = oldPtr.next;
+            oldPtr.next = clone;
+            oldPtr = clone.next;
+        }
+        LLNode newHead = oldHead.next;
+        oldPtr = oldHead;
+        LLNode clone = newHead;
+        while(oldPtr.next != null) {
+            clone.random = oldPtr.random.next;
+            oldPtr.next = clone.next;
+            oldPtr = oldPtr.next;
+            clone = oldPtr.next;
+        }
+        return newHead;
+    }
+
 }
