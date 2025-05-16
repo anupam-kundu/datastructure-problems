@@ -24,9 +24,9 @@ public class WildCard {
 			} else if (text.charAt(i) == pattern.charAt(i) || pattern.charAt(i) == '?') {
 				i++;
 			} else if (pattern.charAt(i) == '*') {
-				return match(text.substring(i), pattern.substring(i + 1))
-						|| match(text.substring(i + 1), pattern.substring(i))
-						|| match(text.substring(i + 1), pattern.substring(i + 1));
+				return match(text.substring(i), pattern.substring(i + 1))  // * zero char in text but one in pattern
+						|| match(text.substring(i + 1), pattern.substring(i))  // * one char in text but zero in pattern
+						|| match(text.substring(i + 1), pattern.substring(i + 1)); // one char in text and one in pattern
 			} else {
 				return false;
 			}
