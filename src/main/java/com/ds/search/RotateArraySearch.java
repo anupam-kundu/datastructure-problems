@@ -83,12 +83,12 @@ public class RotateArraySearch {
 			return mid;
 		}
 
-		if (arr[left] < arr[mid]) {
+		if (arr[left] < arr[mid]) {  // left is sorted
 			if (arr[left] < item && item < arr[mid]) {
 				return singlePassBS(arr, left, mid - 1, item);
 			}
 			return singlePassBS(arr, mid + 1, right, item);
-		} else if (arr[mid] < arr[right]) {
+		} else if (arr[mid] < arr[right]) {  // right is sorted
 			if (arr[mid] < item && item < arr[right]) {
 				return singlePassBS(arr, mid + 1, right, item);
 			}
