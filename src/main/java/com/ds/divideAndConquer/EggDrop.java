@@ -21,7 +21,7 @@ public class EggDrop {
 
 		int min = Integer.MAX_VALUE, result;
 		for (int x = 1; x < numOfFloors; x++) {
-			result = 1 /* current move */ + Math.max(eggDrop(numOfEgg - 1, numOfFloors - 1) /* egg breaks */,
+			result = 1 /* current move/floor */ + Math.max(eggDrop(numOfEgg - 1, numOfFloors - 1) /* egg breaks */,
 					eggDrop(numOfEgg, numOfFloors - x) /* egg does not break */);
 			min = Math.min(result, min);
 		}
